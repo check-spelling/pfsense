@@ -5940,7 +5940,7 @@ function upgrade_188_to_189() {
 	}
 }
 
-/* Older pre-existing IPsec P1 entries may not have had the protocol explicitly
+/* Older preexisting IPsec P1 entries may not have had the protocol explicitly
  * defined. Fill in the default value of 'inet'.
  * https://redmine.pfsense.org/issues/9207 */
 function upgrade_189_to_190() {
