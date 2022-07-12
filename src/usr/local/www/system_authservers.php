@@ -886,7 +886,7 @@ $section->addInput(new Form_Select(
 	'RADIUS NAS IP Attribute',
 	$pconfig['radius_nasip_attribute'],
 	build_radiusnas_list()
-))->setHelp('Enter the IP to use for the "NAS-IP-Address" attribute during RADIUS Acccess-Requests.<br />'.
+))->setHelp('Enter the IP to use for the "NAS-IP-Address" attribute during RADIUS Access-Requests.<br />'.
 			'Please note that this choice won\'t change the interface used for contacting the RADIUS server.');
 
 if (isset($id) && $a_server[$id])
