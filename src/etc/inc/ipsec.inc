@@ -879,7 +879,7 @@ function ipsec_initiate_by_conid($type = 'ike', $conid) {
 	}
 	switch ($type) {
 		case 'all':
-			/* Find relevant P2s and initaite all of them */
+			/* Find relevant P2s and initiate all of them */
 			$cmap = ipsec_map_config_by_id();
 			list($ikeid, $reqid) = ipsec_id_by_conid($conid);
 			if (array_key_exists($ikeid, $cmap)) {
