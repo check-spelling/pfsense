@@ -1261,7 +1261,7 @@ function ca_has_serial($caref, $serial) {
 		}
 	}
 
-	/* Check the CA iteself */
+	/* Check the CA itself */
 	$this_ca = lookup_ca($caref);
 	$this_serial = cert_get_serial($this_ca['crt'], true);
 	if ($serial == $this_serial) {
