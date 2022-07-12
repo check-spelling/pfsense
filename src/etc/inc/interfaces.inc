@@ -3914,7 +3914,7 @@ function kill_dhcp6client_process($force, $release = false) {
 	In this case use SIGUSR1.
 
 	If we want to exit normally obeying the no release flag then use SIGTERM.
-	If we want to exit with a release overiding the no release flag then
+	If we want to exit with a release overriding the no release flag then
 	use SIGUSR2.
 
 	If $Force is true it will use SIGUSR1, thus forcing dhcp6c to
