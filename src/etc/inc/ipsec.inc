@@ -2320,7 +2320,7 @@ function ipsec_setup_proposal_algo($ealg_id, $keylen, $halgo, $prfalgo, $modp) {
 
 	/* Add the hash algorithm (if present) */
 	if (!empty($halgo)) {
-		/* If there is some content in the propsal already, add a
+		/* If there is some content in the proposal already, add a
 		 * separator */
 		if (!empty($palgo)) {
 			$palgo .= "-";
@@ -2872,7 +2872,7 @@ function ipsec_setup_tunnels($gateways_status = false) {
 		}
 
 		/* For IKEv2 without Split Connections, setup combined sets of
-		 * local/remote traffic selectors and propsals */
+		 * local/remote traffic selectors and proposals */
 		if (!(!isset($ph1ent['mobile']) && (($ikeversion == 1) || isset($ph1ent['splitconn'])))) {
 			if (!isset($ph1ent['mobile']) && !empty($remote_ts_spec)) {
 				$children[$cname]['remote_ts'] = implode(",", $remote_ts_spec);
