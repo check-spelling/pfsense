@@ -5755,7 +5755,7 @@ function upgrade_183_to_184() {
 	}
 }
 
-// Migrate AutoConfigBackup package settings to integtrated ACB system
+// Migrate AutoConfigBackup package settings to integrated ACB system
 // and remove package
 function upgrade_184_to_185() {
 	global $config;
