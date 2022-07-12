@@ -41,7 +41,7 @@ ignore$
 \.wav$
 \.woff2?$
 \.zip$
-^\.github/
+^\.github/actions/spelling/
 ^\Qcomposer.json\E$
 ^\Qsrc/etc/pfSense.obsoletedfiles\E$
 ^\Qsrc/usr/local/share/pfSense/iso_3166-1_list_en.xml\E$
