@@ -884,7 +884,7 @@ function ipsec_initiate_by_conid($type = 'ike', $conid) {
 			list($ikeid, $reqid) = ipsec_id_by_conid($conid);
 			if (array_key_exists($ikeid, $cmap)) {
 				if ($cmap[$ikeid]['p1']['iketype'] == 'ikev2' && !isset($cmap[$ikeid]['p1']['splitconn'])) {
-					/* IKEv2 without split only has one P2, named the same as the the P1 */
+					/* IKEv2 without split only has one P2, named the same as the P1 */
 					ipsec_initiate_by_conid('child', ipsec_conid($cmap[$ikeid]['p1']));
 				} else {
 					foreach ($cmap[$ikeid]['p2'] as $p2) {
