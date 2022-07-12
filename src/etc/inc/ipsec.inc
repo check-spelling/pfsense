@@ -3291,7 +3291,7 @@ function ipsec_configure($restart = false, $filterdns_restart = false) {
 		}
 	}
 
-	/* set default MTU to 1400 for GRE over IPsec, othewise to 1476 */
+	/* set default MTU to 1400 for GRE over IPsec, otherwise to 1476 */
 	ipsec_gre_default_mtu(); 
 
 	/* Manage process */
