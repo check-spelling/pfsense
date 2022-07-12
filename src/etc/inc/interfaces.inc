@@ -6737,7 +6737,7 @@ function get_interface_ip($interface = "wan", $gateways_status = false) {
 	}
 
 	/*
-	 * Beaware that find_interface_ip() is our last option, it will
+	 * Beware that find_interface_ip() is our last option, it will
 	 * return the first IP it find on interface, not necessarily the
 	 * main IP address.
 	 */
@@ -6796,7 +6796,7 @@ function get_interface_ipv6($interface = "wan", $flush = false, $linklocal_fallb
 	}
 
 	/*
-	 * Beaware that find_interface_ip() is our last option, it will
+	 * Beware that find_interface_ip() is our last option, it will
 	 * return the first IP it find on interface, not necessarily the
 	 * main IP address.
 	 */
