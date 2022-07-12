@@ -688,7 +688,7 @@ function updateState(x) {
 	if ($('#pfstate')) {
 		$('[id="pfstate"]').html('(' + x + ')');
 
-		// get numeric part of string before hte '/'
+		// get numeric part of string before the '/'
 		x = x.split('/')[0]
 
 		if (x > adaptivestart) {
