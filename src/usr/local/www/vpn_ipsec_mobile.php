@@ -295,7 +295,7 @@ if ($_POST['save']) {
 
 	if ($pconfig['radius_ip_priority_enable']) {
 		if (!(isset($mobileph1) && ($mobileph1['authentication_method'] == 'eap-radius'))) {
-			$input_errors[] = gettext("RADIUS IP may only take prioriy when using EAP-RADIUS for authentication on the Mobile IPsec VPN.");
+			$input_errors[] = gettext("RADIUS IP may only take priority when using EAP-RADIUS for authentication on the Mobile IPsec VPN.");
 			$pconfig['user_source'] = implode(',', $pconfig['user_source']);
 		}
 	}
