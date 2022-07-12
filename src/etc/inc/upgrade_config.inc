@@ -5475,7 +5475,7 @@ function upgrade_173_to_174() {
 }
 
 /* IPsec Phase1 now supports multiple authentication ciphers to be specified from the webgui.
- * This is usefull for mobile users using different OS's supporting different ciphers.
+ * This is useful for mobile users using different OS's supporting different ciphers.
  */
 function upgrade_174_to_175() {
 	global $config;
