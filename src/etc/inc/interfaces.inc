@@ -3910,7 +3910,7 @@ function kill_dhcp6client_process($force, $release = false) {
 	If we have Taken the WAN interface down, then dhcp6c sits there sending
 	a release and waiting for the response that never comes.
 	So we need to tell it that the interface is down and to just die quickly
-	otherwise a new client may launch and we have duplicate proceses.
+	otherwise a new client may launch and we have duplicate processes.
 	In this case use SIGUSR1.
 
 	If we want to exit normally obeying the no release flag then use SIGTERM.
