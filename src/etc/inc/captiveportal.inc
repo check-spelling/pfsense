@@ -2606,7 +2606,7 @@ function filter_captiveportal_ether() {
 		$interfaces = captiveportal_zone_interfaces($cpcfg);
 
 		if (!empty($interfaces)) {
-			/* set 'rdr' tag for futher captive portal web portal redirection */
+			/* set 'rdr' tag for further captive portal web portal redirection */
 			$rules .= "ether pass on { {$interfaces} } tag \"{$rdrtag}\"\n";
 			/* anchor to set the PASS tag for authenticated clients */
 			$rules .= "ether anchor \"{$cpzoneprefix}_auth/*\" on { {$interfaces} }\n";
